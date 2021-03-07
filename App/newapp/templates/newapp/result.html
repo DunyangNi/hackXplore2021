@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <link rel="stylesheet" href="{% static 'css/index_style.css' %}" />
+    <script type="text/javascript" src="{% static 'index.js' %}"></script>
+</head>
+
+<body>
+<div class = "container">
+    <div class = "center">
+<h1 align="center" class = "box">{{val}}</h1>
+{% if val > 3 %}
+<h1 align="center">please ask someone for help</h1>
+{% elif val > 2 %}
+<h1 align="center">Relax!</h1>
+{% else %}
+<h1 align="center">You are heathy!</h1>
+{% endif %}
+<form method="get" action="">
+    <div class="button_container">
+        <button class="submit_button" type="submit">Return</button>
+    </div>
+</form>
+    </div></div>
+</body>
+</html>

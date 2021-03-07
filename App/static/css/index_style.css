@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
+.header {
+	background-color: #97b1db;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+	font-size: 30px;
+	height: 90px;
+}
+
+.header_past {
+	background-color: #a7d9c0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+	font-size: 30px;
+	height: 90px;
+}
+
+
+.sub_header {
+	font-size: 18px;
+	text-align: left;
+}
+
+.entry_container{
+	text-align: center;
+}
+
+.journal_entries {
+	text-align: center;
+}
+
+.entry {
+	text-align: left;
+}
+
+.question, .survey_values{
+	text-align: center;
+}
+
+.question {
+	color: #3d91b3;
+}
+
+.journal_textarea {
+	border-color: #3d91b3;
+	font-size: 15px;
+}
+
+.button_container {
+	text-align: center;
+}
+
+.submit_button {
+	width: auto;
+	height: auto;
+	background-color: #70b7cf;
+	border-color:  #70b7cf;
+	border-radius: 5px;
+}
+
+.submit_button:hover {
+	background-color: pink;
+}
+
+.entries_container {
+	margin: auto;
+	width: 700px;
+	height: auto;
+	margin-top: 10px;
+}
+
+.entry {
+	background-color: #c3dde8;
+	margin-bottom: 3px;
+	border-radius: 10px;
+}
+
+.entry_date, .entry_text {
+	padding: 5px;
+	padding-left: 7px;
+}
+
+.fa-calendar-week:before{
+	color: navy;
+}
+
+.sub_header {
+	font-size: 18px;
+	text-align: center;
+}
