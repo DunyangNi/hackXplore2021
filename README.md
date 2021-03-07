@@ -1,6 +1,7 @@
 # hackXplore2021
 Team byte-sized.  
-The App folder contains our final projects. The "index" html, css and js files contain our mockup. 
+The App folder contains our final project created using Django. 
+The "index" html, css and js files contains a mockup of our app that runs in the Google Chrome browser (does not incorporate the machine learning aspect). 
 Python open may fail when you run the manage.py out of the App package.
 
 We created a simple app using Django, a python web app framework. 
