@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
+.header {
+	background-color: #97b1db;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 130px;
+	font-size: 50px;
+	height: 130px;
+}
+
+.entry_container{
+	text-align: center;
+}
+
+.entry {
+	text-align: left;
+}
+
+.question, .survey_values{
+	text-align: center;
+}
+
+.question {
+	color: #3d91b3;
+}
+
+.journal_textarea {
+	border-color: #3d91b3;
+	font-size: 15px;
+}
+
+.button_container {
+	text-align: center;
+}
+
+.submit_button {
+	width: auto;
+	height: auto;
+	background-color: #70b7cf;
+	border-color:  #70b7cf;
+	border-radius: 5px;
+}
+
+.submit_button:hover {
+	background-color: pink;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Journal Entry</title>
+    <link rel="stylesheet" href="{% static 'css/index_style.css' %}" />
+</head>
+
+<body>
+    <div class="journal_home">
+        <div class="header">
+            Journal Entry
+        </div>
+    <div>
+
+    <div class="journal_entries">
+
+        <div class="survey"> 
+            <div class="question"> <h3> Little interest or pleasure in doing things </h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1> 0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"> <h3> Feeling down, depressed, or hopeless </h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1> 0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"> <h3> Trouble falling or staying asleep, or sleeping too much </h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1> 0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"> <h3>Feeling tired or having little energy</h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1>0 - Not at all  <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"><h3>Poor appetite or overeating</h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1>0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"><h3>Trouble concentrating on things, such as reading the newspaper or watching television</h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1>0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"> <h3>Moving or speaking so slowly that other people could have noticed. </h3></div> 
+            <div class="question"> <h3>Or the opposite being so figety or restless that you have been moving around a lot more than usual</h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1>0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+
+            <div class="question"><h3>Thoughts that you would be better off dead, or of hurting yourself</h3></div>
+            <p class="survey_values"> 
+                <input type="radio" value=1>0 - Not at all <br>
+                <input type="radio" value=2> 1 - Several days <br>
+                <input type="radio" value=3> 2 - More than half the days <br>
+                <input type="radio" value=4> 3 - Nearly everyday <br>
+            </p>
+         </div>
+
+        <div class="entry_container">
+            <textarea class="journal_textarea" cols=200, rows=10, placeholder="Jot down your thoughts!"></textarea>
+        </div>
+
+        <div class="button_container">
+            <button class="submit_button">Submit entry.</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
