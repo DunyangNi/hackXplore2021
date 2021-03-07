@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 
 <head>
@@ -7,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Journal Entry</title>
-    <link rel="stylesheet" href="{% static 'css/index_style.css' %}" />
+    <link rel="stylesheet" href="index_style.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a3bb481c08.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="journal_home">
         <div class="header">
-            Journal Entry
+            ~Journal Entry~
         </div>
     <div>
 
@@ -22,79 +23,140 @@
         <div class="survey"> 
             <div class="question"> <h3> Little interest or pleasure in doing things </h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1> 0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event)"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);">  3 - Nearly everyday <br>
             </p>
 
             <div class="question"> <h3> Feeling down, depressed, or hopeless </h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1> 0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);"> 3 - Nearly everyday <br>
             </p>
 
             <div class="question"> <h3> Trouble falling or staying asleep, or sleeping too much </h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1> 0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);"> 3 - Nearly everyday <br>
             </p>
 
             <div class="question"> <h3>Feeling tired or having little energy</h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1>0 - Not at all  <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all  <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);"> 3 - Nearly everyday <br>
             </p>
-
+        </td>
+        <td>
             <div class="question"><h3>Poor appetite or overeating</h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1>0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);">  3 - Nearly everyday <br>
             </p>
 
             <div class="question"><h3>Trouble concentrating on things, such as reading the newspaper or watching television</h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1>0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);"> 3 - Nearly everyday <br>
             </p>
 
             <div class="question"> <h3>Moving or speaking so slowly that other people could have noticed. </h3></div> 
             <div class="question"> <h3>Or the opposite being so figety or restless that you have been moving around a lot more than usual</h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1>0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);"> 3 - Nearly everyday <br>
             </p>
 
             <div class="question"><h3>Thoughts that you would be better off dead, or of hurting yourself</h3></div>
             <p class="survey_values"> 
-                <input type="radio" value=1>0 - Not at all <br>
-                <input type="radio" value=2> 1 - Several days <br>
-                <input type="radio" value=3> 2 - More than half the days <br>
-                <input type="radio" value=4> 3 - Nearly everyday <br>
+                <input type="radio" value=0 onClick="selectMCQ(event);"> 0 - Not at all <br>
+                <input type="radio" value=1 onClick="selectMCQ(event);"> 1 - Several days <br>
+                <input type="radio" value=2 onClick="selectMCQ(event);"> 2 - More than half the days <br>
+                <input type="radio" value=3 onClick="selectMCQ(event);"> 3 - Nearly everyday <br>
             </p>
          </div>
-
+        <div class="input_date">
+            <label>Today's date: </label>
+            <input type="text" id="date" placeholder="Month Day, Year"></input>
+        </div>
         <div class="entry_container">
-            <textarea class="journal_textarea" cols=200, rows=10, placeholder="Jot down your thoughts!"></textarea>
+            <textarea id="journal_text" class="journal_textarea" cols=130, rows=10, placeholder="Jot down your thoughts!"></textarea>
         </div>
 
-        <div class="button_container">
+        <div class="button_container" onClick="submit();">
             <button class="submit_button">Submit entry.</button>
         </div>
-
     </div>
+
+    <br>
+    <div class="header_past">
+        ~Past Entries~ 
+    </div>
+
+    <div class="entries_container">
+        <div class="entry">
+            <div class="entry_date">
+                <span> <i class="fas fa-calendar-week"></i></span> <b>March 6th, 2021</b>
+            </div>
+            <div class="entry_text"> 
+                <div> Questionaire score: 0 </div>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+       </div>
+
+        <div class="entry">
+            <div class="entry_date">
+                <span> <i class="fas fa-calendar-week"></i></span> <b>March 1st, 2021</b>
+            </div>
+            <div class="entry_text"> 
+                <div> Questionaire score: 0 </div>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+       </div>
+
+        <div class="entry">
+            <div class="entry_date">
+                <span><i class="fas fa-calendar-week"></i></span> <b>February 20th, 2021</b>
+            </div>
+            <div class="entry_text"> 
+                <div> Questionaire score: 2 </div>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+       </div>
+
+        <div class="entry">
+            <div class="entry_date">
+                <span> <i class="fas fa-calendar-week"></i></span> <b>February 19th, 2021</b>
+            </div>
+            <div class="entry_text"> 
+                <div> Questionaire score: 3 </div>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+       </div>
+
+       <div class="entry">
+            <div class="entry_date">
+                <span> <i class="fas fa-calendar-week"></i></span> <b>February 10th, 2021</b>
+            </div>
+            <div class="entry_text"> 
+                <div> Questionaire score: 1 </div>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+       </div>
+    <div>
+
 
 </body>
 

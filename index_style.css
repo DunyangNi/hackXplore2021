@@ -1,21 +1,37 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 body {
 	font-family: 'Comfortaa', cursive;
 }
 
-.header {
+.header, .header_past{
 	background-color: #97b1db;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 130px;
-	font-size: 50px;
-	height: 130px;
+	line-height: 90px;
+	font-size: 30px;
+	height: 90px;
+	width: 70%;
+	margin: auto;
+	border-radius: 20px;
+}
+
+.header_past {
+	background-color: #a7d9c0;
+}
+
+.sub_header {
+	font-size: 18px;
+	text-align: left;
 }
 
 .entry_container{
 	text-align: center;
+}
+
+.journal_entries {
+	text-align: center;
+	justify-content: center;
 }
 
 .entry {
@@ -30,6 +46,9 @@ body {
 	color: #3d91b3;
 }
 
+.input_date {
+	margin-bottom: 5px;
+}
 .journal_textarea {
 	border-color: #3d91b3;
 	font-size: 15px;
@@ -49,4 +68,31 @@ body {
 
 .submit_button:hover {
 	background-color: pink;
+}
+
+.entries_container {
+	margin: auto;
+	width: 700px;
+	height: auto;
+	margin-top: 10px;
+}
+
+.entry {
+	background-color: #c3dde8;
+	margin-bottom: 3px;
+	border-radius: 10px;
+}
+
+.entry_date, .entry_text {
+	padding: 5px;
+	padding-left: 7px;
+}
+
+.fa-calendar-week:before{
+	color: navy;
+}
+
+.sub_header {
+	font-size: 18px;
+	text-align: center;
 }
